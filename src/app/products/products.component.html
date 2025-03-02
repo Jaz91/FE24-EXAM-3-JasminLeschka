@@ -1,0 +1,24 @@
+<div class="container my-4">
+    <h1>Products</h1>
+    <div class="row">
+    
+      @for (product of products; track product.id) {
+      <div class="col-md-4">
+        <div class="card mb-4 card">
+          <img [src]="product.img"  class="card-img-top" [alt]="product.name">
+          <div class="card-body">
+            <h5 class="card-title" >{{ product.name }}</h5>
+            <p class="card-text"> Price: {{ product.price }} €</p>
+            @if (product.availability){         
+            <button class="btn btn-dark" (click)="addToCart(product)">Add to Cart</button>
+            <a [routerLink]="['/details', product.id]" class="btn btn-outline-light">Details </a>
+            } @else {
+              <p>Not Available</p>
+            }
+
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+    </div>

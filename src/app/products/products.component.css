@@ -1,0 +1,11 @@
+* {
+  color: white;
+}
+.card {
+  border: 1px solid white;
+  background: black;
+  background-color: black;
+}
+button {
+  border: 1px solid white;
+}

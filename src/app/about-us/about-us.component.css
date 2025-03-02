@@ -1,0 +1,20 @@
+* {
+  color: white;
+}
+.Reason {
+  border: 2px solid white;
+  width: 420px;
+  padding: 5px;
+  margin: 50px 20px 200px;
+  padding-left: 10px;
+}
+.Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.About {
+  margin-top: 20px;
+  width: 650px;
+}

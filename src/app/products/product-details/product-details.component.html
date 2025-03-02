@@ -1,0 +1,25 @@
+@if (product) {
+<div class="container my-4">
+    <div class="content">
+        <h1>{{ product.name }}</h1>
+        <hr>
+        <p><strong>Rating: </strong> {{ product.rating }} ★</p>
+        <p><strong>Category:</strong> {{ product.category }}</p>
+        <hr>
+        <img [src]="product.img" [alt]="product.name" class="img-fluid mb-4 w-50">
+        <p>{{ product.description }} </p>
+        <hr>
+        <h2> <strong>Price:</strong> {{ product.price }} € </h2>
+        @if (!product.availability) {
+            <p>Not Available</p>
+        }
+    </div>
+</div>
+
+}
+<div class="button">
+    <a routerLink="/products" class="btn btn-outline-light">Go Back</a>
+    @if (product && product.availability) {
+    <button class="btn btn-dark" (click)="addToCart(product)">Add to Cart</button>
+    }
+</div>

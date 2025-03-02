@@ -1,0 +1,28 @@
+* {
+  color: white;
+}
+th {
+  background-color: black;
+  color: white;
+}
+.table {
+  border: 1px solid white;
+}
+
+td {
+  background-color: #7a3500;
+  color: white;
+}
+
+.quantity {
+  color: black;
+}
+
+.Total td {
+  background-color: rgb(43, 34, 34);
+}
+
+.Charges td {
+  background-color: white;
+  color:gray;
+}
